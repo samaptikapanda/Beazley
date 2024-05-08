@@ -48,6 +48,7 @@ async function run() {
   );
   console.log("*************************************************************************2")
   const Tokendata = await TokenFetchResponse.json();
+  console.log("*************************************************************************",Tokendata)
   const Token = Tokendata.token;
 
   // const response = await fetch(
