@@ -33535,13 +33535,12 @@ async function run() {
   let head_ref = core.getInput("HEAD_REF");
   let base_ref = core.getInput("BASE_REF");
 
-  console.log("********************1",{ head_ref, base_ref, SourceSystem, TargetSystem, schemaName });
+  console.log({ head_ref, base_ref, SourceSystem, TargetSystem, schemaName });
 
   let body_0 = {
     username: USER_NAME,
     password: P_W,
   };
-  console.log("********************body_0",body_0);
   // let host = "40.78.156.172";
   let body_1 = {
     UserName: "samaptikapanda",
@@ -33557,9 +33556,6 @@ async function run() {
     BaseBranch: "master",
     ScriptGenerationRules : [""]
   };
-  console.log("body_1************************************body_1 2",body_1)
-
-   console.log("*************************************************************************3")
   const TokenFetchResponse = await fetch(
     `https://app.4dalert.com/api/v1/user-auth/login-user`,
     {
@@ -33568,11 +33564,8 @@ async function run() {
       headers: { "Content-Type": "application/json" },
     }
   );
-  console.log("*************************************************************************4")
   const Tokendata = await TokenFetchResponse.json();
-  console.log("*************************************************************************5",Tokendata)
   const Token = Tokendata.token;
-  console.log("*************************************************************************6",Token)
   // const response = await fetch(
   //   "http://40.78.156.172/api/v1/4dalert/database-data-change-monitor?database=decisionsigma",
   //   {
@@ -33595,16 +33588,13 @@ async function run() {
       },
     }
   );
-console.log("*************************************************************************7")
-  console.log("deployScriptResp : **************************8", deployScriptResp);
+  console.log("deployScriptResp : ", deployScriptResp);
 
   // const ResonseData = await response.text();
   // console.log("ResonseData : ", ResonseData);
 
   const GITHUB_TOKEN = core.getInput("GITHUB_TOKEN");
-  console.log("deployScriptResp : **************************8", GITHUB_TOKEN);
   const octokit = github.getOctokit(GITHUB_TOKEN);
-  console.log("deployScriptResp : **************************9", octokit);
   const { context = {} } = github;
   const { pull_request } = context.payload;
 
