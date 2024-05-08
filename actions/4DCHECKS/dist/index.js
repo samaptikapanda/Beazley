@@ -33543,10 +33543,10 @@ async function run() {
   };
   // let host = "40.78.156.172";
   let body_1 = {
-    UserName: "niharrout",
+    UserName: "samaptikapanda",
     RepoType: "GITHUB",
     RepoName: "GITHUB-Beazley",
-    ConnectionName: "Beazley",
+    ConnectionName: "BeazleyTest",
     SourceSystemName: "SGSSANDBOX",
     TargetSystemName: "SANDBOX1",
     SystemType: "SNOWFLAKE",
@@ -33566,7 +33566,6 @@ async function run() {
   );
   const Tokendata = await TokenFetchResponse.json();
   const Token = Tokendata.token;
-
   // const response = await fetch(
   //   "http://40.78.156.172/api/v1/4dalert/database-data-change-monitor?database=decisionsigma",
   //   {
@@ -33589,7 +33588,6 @@ async function run() {
       },
     }
   );
-
   console.log("deployScriptResp : ", deployScriptResp);
 
   // const ResonseData = await response.text();
@@ -33597,7 +33595,6 @@ async function run() {
 
   const GITHUB_TOKEN = core.getInput("GITHUB_TOKEN");
   const octokit = github.getOctokit(GITHUB_TOKEN);
-
   const { context = {} } = github;
   const { pull_request } = context.payload;
 
