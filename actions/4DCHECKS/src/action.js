@@ -14,7 +14,7 @@ async function run() {
   let head_ref = core.getInput("HEAD_REF");
   let base_ref = core.getInput("BASE_REF");
 
-  console.log({ head_ref, base_ref, SourceSystem, TargetSystem, schemaName });
+  console.log("********************",{ head_ref, base_ref, SourceSystem, TargetSystem, schemaName });
 
   let body_0 = {
     username: USER_NAME,
@@ -35,6 +35,9 @@ async function run() {
     BaseBranch: "master",
     ScriptGenerationRules : [""]
   };
+  console.log("body_1***",body_1)
+
+   console.log("*************************************************************************1")
   const TokenFetchResponse = await fetch(
     `https://app.4dalert.com/api/v1/user-auth/login-user`,
     {
@@ -43,6 +46,7 @@ async function run() {
       headers: { "Content-Type": "application/json" },
     }
   );
+  console.log("*************************************************************************2")
   const Tokendata = await TokenFetchResponse.json();
   const Token = Tokendata.token;
 
@@ -68,7 +72,7 @@ async function run() {
       },
     }
   );
-
+console.log("*************************************************************************3")
   console.log("deployScriptResp : ", deployScriptResp);
 
   // const ResonseData = await response.text();
