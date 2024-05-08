@@ -33557,7 +33557,7 @@ async function run() {
     ScriptGenerationRules : [""]
   };
   const TokenFetchResponse = await fetch(
-    `http://4.150.176.218/api/v1/user-auth/login-user`,
+    `https://app.4dalert.com/api/v1/user-auth/login-user`,
     {
       method: "post",
       body: JSON.stringify(body_0),
@@ -33579,7 +33579,7 @@ async function run() {
   // );
 
   const deployScriptResp = await fetch(
-    `http://4.150.176.218/api/v1/4d/ci/cd/generate-deployment-scripts`,
+    `https://app.4dalert.com/api/v1/4d/ci/cd/generate-deployment-scripts`,
     {
       method: "post",
       body: JSON.stringify(body_1),
