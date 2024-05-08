@@ -22,10 +22,10 @@ async function run() {
   };
   // let host = "40.78.156.172";
   let body_1 = {
-    UserName: "niharrout",
+    UserName: "samaptikapanda",
     RepoType: "GITHUB",
     RepoName: "GITHUB-Beazley",
-    ConnectionName: "Beazley",
+    ConnectionName: "BeazleyTest",
     SourceSystemName: "SGSSANDBOX",
     TargetSystemName: "SANDBOX1",
     SystemType: "SNOWFLAKE",
