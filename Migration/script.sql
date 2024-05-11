@@ -1,6 +1,4 @@
-ALTER TABLE "SANDBOX1"."DBO"."UsersV3" ADD "Age" NUMBER(38,0);
------------------------------------------------------------------------------
-ALTER TABLE "SANDBOX1"."DBO"."UsersV3" ADD "Age2" NUMBER(38,0)
+ALTER TABLE "SANDBOX1"."DBO".TEMPORARY_SALES ADD SALE_DATE DATE
 ;
 -----------------------------------------------------------------------------
 
