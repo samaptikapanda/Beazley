@@ -4,5 +4,6 @@ create or replace TABLE "DBO"."UsersV3" (
 	"Age" NUMBER(38,0),
 	"Age2" NUMBER(38,0),
 	ADDR3 VARCHAR(20),
-	ADDR4 VARCHAR(20)
+	ADDR4 VARCHAR(20),
+	ADDR5 VARCHAR(20)
 );
