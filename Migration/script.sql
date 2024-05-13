@@ -1,8 +1,16 @@
-create or replace TABLE "DBO".YES (
-	PROD_ID NUMBER(38,0),
-	PROD_NAME VARCHAR(100),
-	CATAGORY VARCHAR(100),
-	RATING NUMBER(38,0),
-	INDICATER VARCHAR(10)
+create or replace TABLE "DBO"."Users" (
+	ID NUMBER(38,0) autoincrement start 1 increment 1 noorder,
+	NAME VARCHAR(100) NOT NULL,
+	PREFERENCES VARIANT,
+	CREATED_AT TIMESTAMP_NTZ(9),
+	"Age" NUMBER(10,0)
 );
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+ALTER TABLE "DBO".YES ADD ADDR9 DATE
+;
+-----------------------------------------------------------------------------
+
 -----------------------------------------------------------------------------
