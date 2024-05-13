@@ -5,4 +5,3 @@ create or replace TABLE "DBO".YES (
 	RATING NUMBER(38,0),
 	INDICATER VARCHAR(10)
 );
------------------------------------------------------------------------------
