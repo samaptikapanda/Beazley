@@ -1,8 +1,15 @@
-create or replace TABLE "DBO"."Users" (
-	ID NUMBER(38,0) autoincrement start 1 increment 1 noorder,
-	NAME VARCHAR(100) NOT NULL,
-	PREFERENCES VARIANT,
-	CREATED_AT TIMESTAMP_NTZ(9),
-	"Age" NUMBER(10,0)
+create or replace TABLE "DBO"."alert" (
+	FIRSTNAME VARCHAR(250),
+	MIDDLENAME VARCHAR(250),
+	LASTNAME VARCHAR(250),
+	CUSTOMERNAME VARCHAR(250),
+	ADDRESS VARCHAR(250),
+	CITY VARCHAR(250),
+	PHONE NUMBER(38,0),
+	EMAIL VARCHAR(250),
+	SSN VARCHAR(250),
+	GENDER VARCHAR(250),
+	AGE NUMBER(38,0),
+	CUSTOMERID VARCHAR(250)
 );
 -----------------------------------------------------------------------------
