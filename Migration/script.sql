@@ -1,10 +1,8 @@
-create or replace TABLE "DBO"."UsersV3" (
-	ID NUMBER(38,0) autoincrement start 1 increment 1 noorder,
-	NAME VARCHAR(100) NOT NULL,
-	"Age" NUMBER(38,0),
-	"Age2" NUMBER(38,0),
-	ADDR3 VARCHAR(20),
-	ADDR4 VARCHAR(20),
-	ADDR5 VARCHAR(20)
+create or replace TABLE "DBO".YES (
+	PROD_ID NUMBER(38,0),
+	PROD_NAME VARCHAR(100),
+	CATAGORY VARCHAR(100),
+	RATING NUMBER(38,0),
+	INDICATER VARCHAR(10)
 );
 -----------------------------------------------------------------------------
