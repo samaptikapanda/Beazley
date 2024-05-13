@@ -5,4 +5,3 @@ create or replace TABLE "DBO"."Users" (
 	CREATED_AT TIMESTAMP_NTZ(9),
 	"Age" NUMBER(10,0)
 );
------------------------------------------------------------------------------
