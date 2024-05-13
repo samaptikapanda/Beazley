@@ -12,4 +12,3 @@ create or replace TABLE "DBO"."alert" (
 	AGE NUMBER(38,0),
 	CUSTOMERID VARCHAR(250)
 );
------------------------------------------------------------------------------
